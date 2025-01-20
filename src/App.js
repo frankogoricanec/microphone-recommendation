@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import BudgetSlider from "./components/BudgetSlider";
+import NoiseToggle from "./components/NoiseToggle";
+import MovementToggle from "./components/MovementToggle";
+import Recommendation from "./components/Recommendation";
+import "./App.css";
 
-function App() {
+const App = () => {
+  const [budget, setBudget] = useState(300);
+  const [isStudio, setIsStudio] = useState(true);
+  const [freedomRequired, setFreedomRequired] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <h1 className="title">Koji mikrofon koristiti?</h1>
+      <div className="app">
+      <div className="questions">
+      <NoiseToggle isStudio={isStudio} setIsStudio={setIsStudio} />
+      <MovementToggle
+        freedomRequired={freedomRequired}
+        setFreedomRequired={setFreedomRequired}
+      />
+      <BudgetSlider budget={budget} setBudget={setBudget} />
+      </div>
+      <Recommendation
+        budget={budget}
+        isStudio={isStudio}
+        freedomRequired={freedomRequired}
+      />
     </div>
+    </div>
+    
   );
-}
+};
 
 export default App;
