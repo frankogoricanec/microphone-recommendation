@@ -2,7 +2,7 @@ import React from "react";
 
 const BudgetSlider = ({ budget, setBudget }) => {
   return (
-    <div>
+    <div className="budget">
       <label>
         <h2>Budžet: {budget}  €</h2>
         <input

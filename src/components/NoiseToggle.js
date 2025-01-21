@@ -2,7 +2,7 @@ import React from "react";
 
 const NoiseToggle = ({ isStudio, setIsStudio }) => {
   return (
-    <div>
+    <div className="noise">
       <h2>Gdje snimam?</h2>
       <label>
         <input

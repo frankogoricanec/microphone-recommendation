@@ -16,6 +16,22 @@ img{
   
 }
 
+.credits{
+margin-bottom: 20px;
+text-align: center;
+margin-top: 0px;
+}
+
+.budget{
+  margin-top: 70px;
+  
+}
+
+.noise{
+  margin-bottom: 70px;
+  
+}
+
 .questions{
   margin: 30px;
   width: 400px;
@@ -25,11 +41,16 @@ img{
   padding: 20px;
   justify-content: space-between;
   text-align: center;
-  background: #ffffff;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+
+  
   border-radius: 15px;
   animation: fadeIn 1s ease-in-out;
-  
+  color: #ffffff;
+  text-shadow: #025a8a 1px 0 40px;
+ 
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  word-spacing: 20px;
   
 
 }
@@ -65,20 +86,27 @@ input[type="range"] {
 
 /* Buttons and Interactivity */
 button {
-  background: #008cff;
+  background: #006058;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
 
 button:hover {
-  background: #005bbb;
+  background: #00bbab;
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tree-button{
+  margin-top: 60px;
+  background: #bcdddb;
+  color: #010000;
+  font-style: italic;
 }
 
 /* Recommendation Box */

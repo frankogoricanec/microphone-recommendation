@@ -2,7 +2,7 @@ import React from "react";
 
 const MovementToggle = ({ freedomRequired, setFreedomRequired }) => {
   return (
-    <div>
+    <div className="movement">
       <h2>Treba li mi sloboda kretanja?</h2>
       <label>
         <input

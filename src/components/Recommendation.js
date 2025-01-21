@@ -1,4 +1,5 @@
 import React from "react";
+import PdfButton from "./PdfButton";
 
 const microphoneData = [
 
@@ -121,12 +122,7 @@ const Recommendation = ({ budget, isStudio, freedomRequired }) => {
             <strong>INTEGRIRANI MIKROFON <br/>
                 {!isStudio?" + AUDIO KOREKCIJA":" "}</strong>
           </p>
-          <a
-            href=""
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ textDecoration: "none", color: "#008cff" }}
-          >
+
             <img
               src="https://www.links.hr/images/thumbs/0086067_laptop-hp-15-fc0003nm-7s4s9ea-ryzen-5-7520u-16gb-512gb-ssd-amd-radeon-hd-graphics-156-fhd-ips-bez-o_550.jpg"
               alt="Integrated Microphone"
@@ -138,8 +134,9 @@ const Recommendation = ({ budget, isStudio, freedomRequired }) => {
               }}
             />
             <br />
-            {!isStudio?" SAZNAJ VIŠE O AUDIO KOREKCIJI":" "}
-          </a>
+            
+         
+          <PdfButton />
 
         </div>
 
